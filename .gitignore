@@ -4,3 +4,6 @@ literature/*
 lib/*
 hw4_solution/*
 *.odp
+*/**/.jpg
+*/**/.jpeg
+*/**/.png
