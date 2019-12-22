@@ -3,6 +3,8 @@
 
 #include "flow_network.hpp"
 #include <vector>
+#include <unordered_map>
+#include <unordered_set>
 
 
 class Segmentation{
@@ -18,11 +20,11 @@ private:
     void UpdateGraph(Path& path, Flow& flow);
     void FindMaskOfForeground(const std::set<int>& reachable_nodes, Mask&);
 
-    void InitializePreFlow();
+    void InitializePreFlow(std::unordered_set<int>&);
     void ReturnNodesHavingExcess(std::vector<int>& excess_nodes);
-    int FindNodeWithMaxHeight(const std::vector<int>& excess_nodes);
+    int FindNodeWithMaxHeight(const std::unordered_set<int>& excess_nodes);
     int ReturnAnyDownHill(int node);
-    int Push(int u, int v);
+    bool Push(int u, int v,std::unordered_set<int>&);
     void IncrementHeightByOne(int u);
 };
 

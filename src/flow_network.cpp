@@ -1,6 +1,7 @@
 #include "flow_network.hpp"
 
 #include <queue>
+#include <stack>
 #include <set>
 #include <map>
 #include <vector>
@@ -62,14 +63,14 @@ void FlowNetwork::AugmentFlow(Path& p, Flow& f)
 void FlowNetwork::FindAugmentingPath(Path& augmenting_path, std::set<int>& reachable_nodes)
 {
     // find the path from source to sink using BFS
-    std::queue<int> bfs_queue;
+    std::stack<int> bfs_queue;
     std::map<int,int> visited;
 
     bfs_queue.push(source);
     visited.insert({source,source});
     while(!bfs_queue.empty())
     {
-        int present_node = bfs_queue.front();
+        int present_node = bfs_queue.top();
         bfs_queue.pop();
         if(present_node == sink)
         {
