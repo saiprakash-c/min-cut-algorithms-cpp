@@ -9,9 +9,6 @@
 #include <algorithm>
 
 
-
-
-
 Mask::Mask(int size, bool value):
 mask(std::vector<bool>(size, value))
 {
