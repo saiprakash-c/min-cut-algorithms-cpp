@@ -2,7 +2,6 @@ bin/*
 build/*
 literature/*
 lib/*
-hw4_solution/*
 *.odp
 */**/.jpg
 */**/.jpeg
@@ -10,3 +9,4 @@ hw4_solution/*
 *.jpeg
 *.jpg
 *.png
+./vscode
