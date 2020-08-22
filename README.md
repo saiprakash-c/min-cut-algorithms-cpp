@@ -48,7 +48,7 @@ The overall complexity is $O(V^2\sqrt(E))$
 Before you begin, ensure you have the following libraries installed.
 <!--- These are just example requirements. Add, duplicate or remove as required --->
 
-* [opencv 4.x](git clone https://github.com/Itseez/opencv.git) 
+* [opencv](https://github.com/Itseez/opencv.git) 
 
 ## Installing
 
