@@ -121,11 +121,5 @@ void Image::ShowSegmentedImage()
         }
         
     }
-    cv::imwrite("output.jpg",mask);
-    // cv::imshow("Segmented_Image", mask);
-    // int k = cv::waitKey();
-    // if(k==27)
-    // {
-    //     cv::destroyAllWindows();
-    // }
+    cv::imwrite("output.png",mask);
 }
