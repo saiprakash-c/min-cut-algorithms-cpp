@@ -10,7 +10,7 @@ set(GRAPH_CUT_MAIN graph_cut_main)
 #            NAMES opencv)
 
 # find package
-find_package(OpenCV 4 REQUIRED)
+find_package(OpenCV REQUIRED)
 
 include_directories(${OpenCV_INCLUDE_DIRS})
 
